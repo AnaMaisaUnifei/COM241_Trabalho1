@@ -78,12 +78,6 @@
     "especialidade": {
       "type": "string"
     },
-    "guias_medicas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::guia-medica.guia-medica",
-      "mappedBy": "medico"
-    },
     "tipo": {
       "type": "enumeration",
       "enum": [

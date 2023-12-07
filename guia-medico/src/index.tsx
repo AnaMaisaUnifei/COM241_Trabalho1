@@ -11,10 +11,11 @@ import CadastroMed from './Cadastro-med';
 import Guias from './Guias';
 import Medico from './Medico';
 import Admin from './Admin';
+import CriarGuia from './Criar-guia';
 
 const router = createBrowserRouter([
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: <Admin />,
+  },
+  {
+    path: "/criar",
+    element: <CriarGuia />,
   },
 ]);
 

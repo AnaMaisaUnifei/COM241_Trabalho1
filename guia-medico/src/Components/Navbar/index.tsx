@@ -12,7 +12,7 @@ function Navbar(){
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
       <li className="nav-item">
-        <Link to={"/login"} className="nav-link" >Login</Link>
+        <Link to={"/"} className="nav-link" >Login</Link>
       </li>
       <li className="nav-item">
         <Link to={"/cadastropaciente"} className="nav-link">Cadastro Paciente</Link>
@@ -22,6 +22,15 @@ function Navbar(){
       </li>
       <li className="nav-item">
         <Link to={"/cadastroadm"} className="nav-link">Cadastro Admin</Link>
+      </li>
+      <li className="nav-item">
+        <Link to={"/medico"} className="nav-link">Medico</Link>
+      </li>
+      <li className="nav-item">
+        <Link to={"/guias"} className="nav-link">Paciente</Link>
+      </li>
+      <li className="nav-item">
+        <Link to={"/admin"} className="nav-link">Admin</Link>
       </li>
     </ul>
   </div>

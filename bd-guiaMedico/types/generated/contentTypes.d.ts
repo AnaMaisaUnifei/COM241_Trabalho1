@@ -374,20 +374,12 @@ export interface ApiGuiaMedicaGuiaMedica extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    data_consulta: Attribute.DateTime;
+    data_consulta: Attribute.Date;
     descricao: Attribute.Text;
     status: Attribute.Enumeration<['pendente', 'autorizada', 'rejeitada']>;
     resposta: Attribute.Text;
-    paciente: Attribute.Relation<
-      'api::guia-medica.guia-medica',
-      'manyToOne',
-      'plugin::users-permissions.user'
-    >;
-    medico: Attribute.Relation<
-      'api::guia-medica.guia-medica',
-      'manyToOne',
-      'plugin::users-permissions.user'
-    >;
+    paciente: Attribute.String;
+    medico: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -663,11 +655,6 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
     data_nasc: Attribute.Date;
     crm: Attribute.String;
     especialidade: Attribute.String;
-    guias_medicas: Attribute.Relation<
-      'plugin::users-permissions.user',
-      'oneToMany',
-      'api::guia-medica.guia-medica'
-    >;
     tipo: Attribute.Enumeration<['medico', 'paciente', 'adm']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

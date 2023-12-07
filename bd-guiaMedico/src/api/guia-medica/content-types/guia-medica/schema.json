@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "data_consulta": {
-      "type": "datetime"
+      "type": "date"
     },
     "descricao": {
       "type": "text"
@@ -30,16 +30,10 @@
       "type": "text"
     },
     "paciente": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "guias_medicas"
+      "type": "string"
     },
     "medico": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "guias_medicas"
+      "type": "string"
     }
   }
 }
