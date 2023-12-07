@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guia_medicas",
+  "info": {
+    "singularName": "guia-medica",
+    "pluralName": "guia-medicas",
+    "displayName": "Guia-Médica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data_consulta": {
+      "type": "datetime"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pendente",
+        "autorizada",
+        "rejeitada"
+      ]
+    },
+    "resposta": {
+      "type": "text"
+    },
+    "paciente": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "guias_medicas"
+    },
+    "medico": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "guias_medicas"
+    }
+  }
+}
