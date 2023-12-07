@@ -14,7 +14,7 @@ function Navbar(props: { menu: string; }){
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to={"/login"} className="nav-link">Sair</Link>
+          <Link to={"/"} className="nav-link">Sair</Link>
         </li>
         <li className="nav-item">
           <Link to={"/guias"} className="nav-link">Guias</Link>
@@ -35,7 +35,7 @@ function Navbar(props: { menu: string; }){
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to={"/login"} className="nav-link">Sair</Link>
+          <Link to={"/"} className="nav-link">Sair</Link>
         </li>
         <li className="nav-item">
           <Link to={"/medico"} className="nav-link">Guias</Link>
@@ -56,7 +56,7 @@ function Navbar(props: { menu: string; }){
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to={"/login"} className="nav-link">Sair</Link>
+          <Link to={"/"} className="nav-link">Sair</Link>
         </li>
         <li className="nav-item">
           <Link to={"/admin"} className="nav-link">Guias</Link>
